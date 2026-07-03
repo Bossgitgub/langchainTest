@@ -1,9 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from Agent import agent
-
-app = FastAPI()
 
 class AskRequest(BaseModel):
     question: str
